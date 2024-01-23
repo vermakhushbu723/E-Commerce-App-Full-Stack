@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'E-Commerce-App-Full-Stack'`, () => {
+  it(`should have as title 'FrontEnd'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('E-Commerce-App-Full-Stack');
+    expect(app.title).toEqual('FrontEnd');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, E-Commerce-App-Full-Stack');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, FrontEnd');
   });
 });
